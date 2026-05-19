@@ -1,1 +1,1 @@
-# claude-code-notes
+# Claude Code Notes
