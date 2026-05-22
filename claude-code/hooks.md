@@ -25,7 +25,7 @@ Events fall into three cadences:
 
 [Here](https://code.claude.com/docs/en/hooks#hook-events) you can find the full list of events and matchers.
 
-![alt text](../assets/hooks-lifecycle.png)
+![alt text](../assets/hooks-lifecycle.svg)
 
 ## How they work
 
