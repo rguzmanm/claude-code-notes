@@ -4,6 +4,20 @@ It is an agentic coding tool that understands codebases, edits files, run comman
 
 ## Tools
 
+LLMs by themselves can only process text and return text. They can't actually read files or run command. To overcome this limitation, coding assistants, like Claude Code, use a system called "tool use".
+
+```
+LLM generates structured text describing actions
+↓
+External runtime executes actions
+↓
+Results are returned as text
+↓
+LLM reasons over results
+↓
+Loop repeats
+```
+
 Tools are capabilities that allow Claude Code to interact with your codebase and development environment. They allow the AI to read files, run commands, and more.
 
 ## The Context Window
@@ -49,6 +63,14 @@ If the file is too large, it can cause the following problems:
 
 - **Project-level** CLAUDE.md lives in the root directory of your project. Shared with the team.
 - **User-level** CLAUDE.md lives in your configuration folder. This one is just for you and applies across all your projects. Put your personal preferences here.
+
+## Useful commands
+
+- `/memory`: Opens the memory file (`CLAUDE.md`) to edit and save persistent memories.
+- `/effort`: Allows you to control how deeply the AI reasons before responding.
+- `/rewind`: Jump back to an earlier point in the conversation. It also works by hitting Escape twice
+
+When in plan mode, you can use `Ctrl+G` to open the planning text in the editor
 
 ## CLAUDE.md vs Skills vs Subagents vs Hooks vs MCP Servers
 
